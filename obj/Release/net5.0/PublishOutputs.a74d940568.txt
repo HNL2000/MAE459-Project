@@ -1,0 +1,5 @@
+C:\Users\henry\source\repos\MAE459 Project\bin\Release\net5.0\publish\MAE459 Project.exe
+C:\Users\henry\source\repos\MAE459 Project\bin\Release\net5.0\publish\MAE459 Project.dll
+C:\Users\henry\source\repos\MAE459 Project\bin\Release\net5.0\publish\MAE459 Project.deps.json
+C:\Users\henry\source\repos\MAE459 Project\bin\Release\net5.0\publish\MAE459 Project.runtimeconfig.json
+C:\Users\henry\source\repos\MAE459 Project\bin\Release\net5.0\publish\MAE459 Project.pdb

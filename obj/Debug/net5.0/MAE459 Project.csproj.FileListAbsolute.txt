@@ -1,0 +1,16 @@
+C:\Users\henry\source\repos\MAE459 Project\obj\Debug\net5.0\MAE459 Project.csproj.AssemblyReference.cache
+C:\Users\henry\source\repos\MAE459 Project\obj\Debug\net5.0\MAE459 Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\henry\source\repos\MAE459 Project\obj\Debug\net5.0\MAE459 Project.AssemblyInfoInputs.cache
+C:\Users\henry\source\repos\MAE459 Project\obj\Debug\net5.0\MAE459 Project.AssemblyInfo.cs
+C:\Users\henry\source\repos\MAE459 Project\obj\Debug\net5.0\MAE459 Project.csproj.CoreCompileInputs.cache
+C:\Users\henry\source\repos\MAE459 Project\bin\Debug\net5.0\MAE459 Project.exe
+C:\Users\henry\source\repos\MAE459 Project\bin\Debug\net5.0\MAE459 Project.deps.json
+C:\Users\henry\source\repos\MAE459 Project\bin\Debug\net5.0\MAE459 Project.runtimeconfig.json
+C:\Users\henry\source\repos\MAE459 Project\bin\Debug\net5.0\MAE459 Project.runtimeconfig.dev.json
+C:\Users\henry\source\repos\MAE459 Project\bin\Debug\net5.0\MAE459 Project.dll
+C:\Users\henry\source\repos\MAE459 Project\bin\Debug\net5.0\ref\MAE459 Project.dll
+C:\Users\henry\source\repos\MAE459 Project\bin\Debug\net5.0\MAE459 Project.pdb
+C:\Users\henry\source\repos\MAE459 Project\obj\Debug\net5.0\MAE459 Project.dll
+C:\Users\henry\source\repos\MAE459 Project\obj\Debug\net5.0\ref\MAE459 Project.dll
+C:\Users\henry\source\repos\MAE459 Project\obj\Debug\net5.0\MAE459 Project.pdb
+C:\Users\henry\source\repos\MAE459 Project\obj\Debug\net5.0\MAE459 Project.genruntimeconfig.cache

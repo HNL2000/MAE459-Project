@@ -1,0 +1,12 @@
+numCells=7500
+heatFlux=5240000
+maxWallTemp=3250
+reactorEquation=constant
+inPressure=3447378.64
+inTemperature=500
+inMassFlow=38
+area=5.04
+circumference=75.6
+nozzleExitDia=2.75
+reactorLength=-1
+ambientPressure=0
