@@ -1,4 +1,4 @@
-numCells=7500
+numCells=100
 heatFlux=5240000
 maxWallTemp=3250
 reactorEquation=constant

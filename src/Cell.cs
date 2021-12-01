@@ -95,5 +95,10 @@ namespace MAE459_Project.src
             Tstar += T;
             this.temperature = Tstar;
         }
+    
+        public double getMachNumber() {
+            double sos = Gamma*fluid.GasConstant*temperature;
+            return velocity/sos;
+        }
     }
 }
