@@ -97,7 +97,7 @@ namespace MAE459_Project.src
         }
     
         public double getMachNumber() {
-            double sos = Gamma*fluid.GasConstant*temperature;
+            double sos = Math.Sqrt(Gamma*fluid.GasConstant*temperature);
             return velocity/sos;
         }
     }

@@ -122,20 +122,20 @@ namespace MAE459_Project.src
 
             // collect data into file;
             StreamWriter sw = new StreamWriter("output.txt");
-            sw.WriteLine("c*: " + String.Format("{0:0.000}", performance[0]) + " m/s");
-            sw.WriteLine("CF: " + String.Format("{0:0.000}", performance[1]));
-            sw.WriteLine("F: " + String.Format("{0:0.000}", performance[2]) + " N");
-            sw.WriteLine("Isp: " + String.Format("{0:0.000}", performance[3]) + " seconds");
+            sw.WriteLine("c* (m/s): " + performance[0]);
+            sw.WriteLine("CF: " + performance[1]);
+            sw.WriteLine("F (N): " + performance[2]);
+            sw.WriteLine("Isp (s): " + performance[3]);
             sw.WriteLine("------------------------------------");
             sw.WriteLine("x(m)    T(K)    Tt(K)   P(Pa)   Pt(Pa)  M");
             sw.WriteLine("------------------------------------");
             foreach (Cell cell in cells) {
-                sw.Write(String.Format("{0:0.000}   ", cell.position));
-                sw.Write(String.Format("{0:0.000}   ", cell.temperature));
-                sw.Write(String.Format("{0:0.000}   ", cell.TotalTemperature));
-                sw.Write(String.Format("{0:0.000}   ", cell.pressure));
-                sw.Write(String.Format("{0:0.000}   ", cell.TotalPressure));
-                sw.Write(String.Format("{0:0.000}   ", cell.getMachNumber()));
+                sw.Write(cell.position + "    ");
+                sw.Write(cell.temperature + "    ");
+                sw.Write(cell.TotalTemperature + "    ");
+                sw.Write(cell.pressure + "    ");
+                sw.Write(cell.TotalPressure + "    ");
+                sw.Write(cell.getMachNumber() + "    ");
                 sw.WriteLine();
             }
             
