@@ -50,13 +50,9 @@ namespace MAE459_Project.src
             double Cp = 0;
             for (int i = 0; i < components.Length; i++)
             {
-                Cp += components[i].GetCp(temperature, this) * moleFractions[i];
+                Cp += components[i].GetCp(temperature) * moleFractions[i];
             }
-            return Cp*1000;
-        }
-
-        public double GetGasConstant() {
-            return 0;
+            return Cp*1000/molecularWeight;
         }
     }
 }

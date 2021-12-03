@@ -41,7 +41,7 @@ namespace MAE459_Project.src
         } 
 
         // J/mol.K
-        public double GetCp(double temperature, Fluid fluid)
+        public double GetCp(double temperature)
         {
             int counter = -1;
             foreach (int T in temperatureRanges)
@@ -60,7 +60,7 @@ namespace MAE459_Project.src
             double t = temperature / 1000;
             double t2 = Math.Pow(t, 2); // slight optimization
 
-            return (A[counter] + B[counter]*t + C[counter]*t2 + D[counter]*Math.Pow(t, 3) + E[counter] / t2)/fluid.molecularWeight; // Shomate Equation      
+            return (A[counter] + B[counter]*t + C[counter]*t2 + D[counter]*Math.Pow(t, 3) + E[counter] / t2); // Shomate Equation, in J/molK 
         }
     }
 }

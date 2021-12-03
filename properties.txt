@@ -1,4 +1,4 @@
-numCells=100
+numCells=1000
 heatFlux=5240000
 maxWallTemp=3250
 reactorEquation=constant
@@ -8,5 +8,5 @@ inMassFlow=38
 area=5.04
 circumference=75.6
 nozzleExitDia=2.75
-reactorLength=-1
+reactorLength=2
 ambientPressure=0

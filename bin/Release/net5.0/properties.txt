@@ -1,7 +1,7 @@
 numCells=10000
 heatFlux=5240000
 maxWallTemp=3250
-reactorEquation=constant
+reactorEquation=sine
 inPressure=3447378.64
 inTemperature=500
 inMassFlow=38

@@ -14,13 +14,11 @@ namespace MAE459_Project.src
         public static int numCells;
         private static Chemical H2;
         private static Fluid fluid;
-
-        private static List<double> convergence = new List<double>();
-
         private static Input input;
         private static double maxWallTemp;
         private static double heatFlux;
         private static double convectiveTransfer;
+        private static double circumference;
         private static Nozzle nozzle;
         private static double ambientPressure;
 
@@ -58,7 +56,7 @@ namespace MAE459_Project.src
             Console.WriteLine("Reactor: " + properties["reactorEquation"][0].ToString().ToUpper() + properties["reactorEquation"].Substring(1).ToLower());
             nozzle = new Nozzle(Double.Parse(properties["nozzleExitDia"]));
             decimal reactorLength = Decimal.Parse(properties["reactorLength"]);
-            double circumference = Double.Parse(properties["circumference"]);
+            circumference = Double.Parse(properties["circumference"]);
             ambientPressure = Double.Parse(properties["ambientPressure"]);
 
             // Problem setup
@@ -93,7 +91,7 @@ namespace MAE459_Project.src
             Cell last = null;
             for (int i = 0; i <= numCells; i++)
             {
-                cells.AddFirst(new Cell(last, fluid, input.area, (double)reactorLength * (1 - (double)i / numCells), (double)reactorLength / numCells, 28*2*(0.15+1.2)));
+                cells.AddFirst(new Cell(last, fluid, input.area, (double)reactorLength * (1 - (double)i / numCells), (double)reactorLength / numCells, circumference));
                 last = cells.First.Value;
             }
 
@@ -144,7 +142,7 @@ namespace MAE459_Project.src
             Console.ReadKey();
         }
 
-        public static decimal FindMaxReactorLength(REACTOR_EQUATION reactorEquation, double precision) {
+        public static decimal FindMaxReactorLength(REACTOR_EQUATION reactorEquation, int precision) {
             decimal increment = 1;
             int currentPrecision = 0; // precision to 10^-n (3 means 0.001)
             decimal reactorLength = 0m;
@@ -161,7 +159,7 @@ namespace MAE459_Project.src
                 // construct cells from back to front
                 for (int i = 0; i <= numCells; i++)
                 {
-                    cells.AddFirst(new Cell(last, fluid, input.area, (double)reactorLength * (1 - (double)i / numCells), (double)reactorLength / numCells, 28*2*(0.15+1.2)));
+                    cells.AddFirst(new Cell(last, fluid, input.area, (double)reactorLength * (1 - (double)i / numCells), (double)reactorLength / numCells, circumference));
                     last = cells.First.Value;
                 }
 
